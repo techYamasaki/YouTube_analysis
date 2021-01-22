@@ -26,10 +26,17 @@ YouTubeの登録者数について，(1)ではその他の要因との関係性�
 <img src="https://user-images.githubusercontent.com/55009777/105423997-d6dcc680-5c89-11eb-8ad0-9d4a7ce82fa9.png" width="500px">
 
 ### (2)`subscribers_transition_analysis_with_fbprophet.ipynb`
+簡単に状態空間モデルによって時系列データの分析を行うことができるfbprophetを利用して，チャンネル登録者数の遷移について分析，予測を行う．  
+`subsc_data.xlsx`には[HikakinTV](https://www.youtube.com/user/HikakinTV)の2013/1/1~2019/3/1における2週間ごとのチャンネル登録者数の増加数をまとめている．  
+以下は，全体のトレンドと月効果，およびそれらの効果を考慮した一年先までの予測である．トレンドから，2017年ごろよりYouTuberという言葉が広まり，利用者数が増加していることがわかる．月効果からは，春夏冬にそれぞれピークを迎えていて，これは学生の休暇期間と重なり，利用者数が一時的に増加していると考えられる．有名YouTuberの登録者数の遷移を見ることでYouTube全体の反映や傾向を見るこたができた．
 
+<img src="https://user-images.githubusercontent.com/55009777/105426441-7c923480-5c8e-11eb-81c4-b0fa0e000031.png" width="500px">
+
+<img src="https://user-images.githubusercontent.com/55009777/105426447-8025bb80-5c8e-11eb-915e-f231299a0a1e.png" width="500px">
 
 ## Requirements
 - fbprophet
+- jpholiday
 
 ## Note
 今回使用した`youtube_data.xlsx`と`subsc_data.xlsx`は公開しておりません．  
